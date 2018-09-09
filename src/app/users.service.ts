@@ -4,7 +4,6 @@ import { map } from 'rxjs/operators';
 
 @Injectable()
 export class UsersService {
-
   constructor(private http: Http) {}
 
   getUsers() {
@@ -20,13 +19,4 @@ export class UsersService {
         }
       })))
   }
-
-  users = [
-    { name: 'name1' },
-    { name: 'name2' },
-    { name: 'name3' },
-    { name: 'name4' },
-    { name: 'name5' },
-    { name: 'name6' },
-  ]
 }
